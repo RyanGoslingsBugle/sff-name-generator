@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SF/F Name Generator</title>
+        <meta name="description" content="Generate your own cool-sounding but vaguely defined science fiction or fantasy novel title.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style type="text/css">
+            html, body {
+                height: 100%;
+                /* The html and body elements cannot have any padding or margin. */
+            }
+
+            .row {
+                margin-bottom: 15px;
+            }
+
+            /* Wrapper for page content to push down footer */
+            #wrap {
+                min-height: 100%;
+                height: auto !important;
+                height: 100%;
+                /* Negative indent footer by it's height */
+                margin: 0 auto -60px;
+              }
+
+              /* Set the fixed height of the footer here */
+              #push,
+              #footer {
+                height: 60px;
+              }
+              #footer {
+                background-color: #f5f5f5;
+                padding: 20px 0 20px 0; 
+              }
+
+              /* Lastly, apply responsive CSS fixes as necessary */
+              @media (max-width: 767px) {
+                #footer {
+                  margin-left: -20px;
+                  margin-right: -20px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                }
+              }
+        </style>
+        <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/generator.js"></script>
+    </head>
+    <body onload="generator()">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="jumbotron text-center ng-info" style="background-color: #99ccff!important">
+                        <h1>THE SF/F NAME GENERATOR</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <p>Ever wanted to be a top-selling Science Fiction/Fantasy author with a string of awards and the adoration of awkward teenage nerds worldwide? Now, you too can enjoy the feeling of Internet forums clamouring for your blood for writing a nice story about spaceships or whatever!</p>
+                        <p>Just push the button and find the title and inspiration for your next adventure, preferably not starring a straight white guy named Dirk Stone with weapon skills and a tortured past.</p>
+                        <p>You might see odd chunks of some favourite titles pop up now and again; I assure you, I have as much love and respect for them as anyone. It's all in good fun.</p>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                            <div id="placeholder" class="text-primary text-center lead well"></div>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4 generator">
+                        <div>
+                            <button class="btn-primary" onclick="generator()">Generate a new name</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                <div id="push">
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <p class="text-muted">Built by <a href="https://teasnake.wordpress.com/">Teasnake</a></p>
+            </div>
+        </div>
+    </body>
+</html>
